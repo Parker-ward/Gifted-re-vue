@@ -22,7 +22,10 @@ export default {
       logger.log('Yo dude its the Home Page')
       getGifts()
     })
-    return {}
+    return {
+
+      gifts: computed(() => AppState.gifts)
+    }
   }
 }
 
