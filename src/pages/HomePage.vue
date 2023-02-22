@@ -1,4 +1,4 @@
-<template><!-- TODO use a v-for -->
+<template>
   <div v-for="gift in gift">
     <GiftCard :gift="gift" />
   </div>
