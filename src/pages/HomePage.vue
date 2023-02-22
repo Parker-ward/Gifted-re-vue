@@ -1,6 +1,10 @@
 <template>
-  <div v-for="g in gifts">
-    <GiftCard :gift="g" />
+  <div class="container-fluid">
+    <div class="row justify-content-between">
+      <div v-for="g in gifts" class="col-md-3 my-3 mx-2">
+        <GiftCard :gift="g" />
+      </div>
+    </div>
   </div>
 </template>
 
