@@ -1,10 +1,12 @@
 <template>
-  <router-link>
-    <img :src="Gift.url" alt="" class="img-fluid rounded">
-  </router-link>
-  <h3>
-    {{ Gift.tag }}
-  </h3>
+  <div class="row">
+    <div class="col-md-3">
+      <img :src="gift.url" alt="" class=" img-fluid rounded">
+    </div>
+  </div>
+  <h2>
+    {{ gift.tag }}
+  </h2>
 </template>
 
 
