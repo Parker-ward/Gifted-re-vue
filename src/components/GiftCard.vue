@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-md-3">
-      <img :src="gift.url" alt="" class=" img-fluid rounded">
+      <img :src="gift.url" alt="" class="img-fluid rounded selectable">
     </div>
   </div>
   <h2>
