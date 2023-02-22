@@ -1,12 +1,13 @@
 <template>
-  <div v-for="gift in gift">
-    <GiftCard :gift="gift" />
+  <div v-for="g in gifts">
+    <GiftCard :gift="g" />
   </div>
 </template>
 
 <script>
 
 import { computed, onMounted } from 'vue';
+import { AppState } from '../AppState.js';
 import GiftCard from '../components/GiftCard.vue';
 import { giftsService } from '../services/GiftsService.js';
 import { logger } from '../utils/Logger.js';
